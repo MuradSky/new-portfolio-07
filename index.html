@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>gulp-scss-starter</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="./libs/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <header class="header js-header ">
+    <div class="header__wrap">
+		<div class="header__inner container">
+			<a href="/" class="header__logo">
+				<img src="./img/logo.svg" alt="Logo">
+			</a>
+			<button class="header__burger js-popup-link" data-mfp-src="#header-menu">
+				<img src="./img/svg/menu.svg" alt="Logo">
+			</button>
+			<div class="header__menu" id="header-menu">
+				<div class="header__mobile">
+					<a href="/" class="header__logo">
+						<img src="./img/logo.svg" alt="Logo">
+					</a>
+					<button class="header__burger js-modal-close" data-mfp-src="#header-menu">
+						<img src="./img/svg/close.svg" alt="Logo">
+					</button>
+				</div>
+				<nav class="header__nav js-flexmenu">
+					<ul class="menu js-flexmenu__container">
+    <li class="menu__item js-menu-item" data-name="Компания" data-submenu="true">
+    
+        <span class="menu__item-top">
+            <span>Компания</span>
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#down"></use>
+</svg>
+        </span>
+        <ul class="menu__submenu js-submenu">
+            <li>
+                <a href="/">Подпункт 1</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 2</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 3</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 4</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 5</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 6</a>
+            </li>
+        </ul>
+    
+
+     
+</li><li class="menu__item js-menu-item" data-name="Проект" data-submenu="false">
+    
+
+    
+        <span class="menu__item-top">
+            <a href="/">Проект</a>
+        </span>
+     
+</li><li class="menu__item js-menu-item" data-name="Проект" data-submenu="false">
+    
+
+    
+        <span class="menu__item-top">
+            <a href="/">Проект</a>
+        </span>
+     
+</li><li class="menu__item js-menu-item" data-name="Акционерам и инвесторам" data-submenu="true">
+    
+        <span class="menu__item-top">
+            <span>Акционерам и инвесторам</span>
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#down"></use>
+</svg>
+        </span>
+        <ul class="menu__submenu js-submenu">
+            <li>
+                <a href="/">Подпункт 1</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 2</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 3</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 4</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 5</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 6</a>
+            </li>
+        </ul>
+    
+
+     
+</li><li class="menu__item js-menu-item" data-name="СМИ" data-submenu="true">
+    
+        <span class="menu__item-top">
+            <span>СМИ</span>
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#down"></use>
+</svg>
+        </span>
+        <ul class="menu__submenu js-submenu">
+            <li>
+                <a href="/">Подпункт 1</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 2</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 3</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 4</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 5</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 6</a>
+            </li>
+        </ul>
+    
+
+     
+</li><li class="menu__item js-menu-item" data-name="Концессии" data-submenu="true">
+    
+        <span class="menu__item-top">
+            <span>Концессии</span>
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#down"></use>
+</svg>
+        </span>
+        <ul class="menu__submenu js-submenu">
+            <li>
+                <a href="/">Подпункт 1</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 2</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 3</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 4</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 5</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 6</a>
+            </li>
+        </ul>
+    
+
+     
+</li><li class="menu__item js-menu-item" data-name="НПФ" data-submenu="false">
+    
+
+    
+        <span class="menu__item-top">
+            <a href="/">НПФ</a>
+        </span>
+     
+</li><li class="menu__item js-menu-item" data-name="НПФ" data-submenu="false">
+    
+
+    
+        <span class="menu__item-top">
+            <a href="/">НПФ</a>
+        </span>
+     
+</li><li class="menu__item js-menu-item" data-name="инвесторам" data-submenu="true">
+    
+        <span class="menu__item-top">
+            <span>инвесторам</span>
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#down"></use>
+</svg>
+        </span>
+        <ul class="menu__submenu js-submenu">
+            <li>
+                <a href="/">Подпункт 1</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 2</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 3</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 4</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 5</a>
+            </li>
+            <li>
+                <a href="/">Подпункт 6</a>
+            </li>
+        </ul>
+    
+
+     
+</li>
+</ul>
+				</nav>
+				<div class="header__big-logo">
+					<img src="./img/big-logo.svg" alt="Logo">
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main class="main">
+    <section class="intro">
+    <div class="intro__img">
+        <picture>
+            <source media="(max-width: 769px)" srcset="./img/intro/mbg1.jpg">
+            <img src="./img/intro/bg1.jpg" alt="Северный дублер Кутузовского проспекта " width="100" height="100" loading="lazy">
+        </picture>
+    </div>
+    <div class="container intro__content">
+        <div class="intro__inner">
+            <div class="intro__inner-item">
+                <h1 class="intro__title">Северный дублер Кутузовского проспекта</h1>
+                <p class="intro__text">
+                    Первая автодорожная концессия в Москве
+                    и первая платная дорога в черте города.
+                </p>
+                <div class="intro__button" >
+                    <a href="#navigation" class="btn btn_blue intro__link js-anchor">Карта СДКП</a>
+                </div>
+            </div>
+            <div class="intro__inner-item">
+                <picture class="intro__frame">
+                    <img src="./img/intro/1.jpg" alt="Intro" width="556" height="515" loading="lazy">
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="navigation" id="navigation">
+    <div class="container">
+        <div class="navigation__top">
+            <h2 class="title navigation__title">Навигация</h2>
+            <div class="navigation__top-right">
+                <div class="navigation__top-icon">
+                    <img src="./img/nav_icon.png" alt="Icon">
+                </div>
+                <p class="text">
+                    Современная бессветофорная магистраль протянется <br>
+                    вдоль Смоленского направления железной дороги <br>
+                    от делового центра «Москва-Сити» до МКАД. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="navigation__img-mob">
+        <img src="./img/1.jpg" alt="Навигация" loading="lazy">
+    </div>
+    <div class="navigation__bottom">
+        <div class="container">
+            <nav class="navigation__nav">
+                <ul class="navigation__nav-list">
+                    <li class=" navigation__nav-item">
+    <a href="#in-number" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Проект в цифрах</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#history" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">История проекта</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#premise" class="js-anchor navigation__nav-link active">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Предпосылки создания</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#effects" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Эффекты от реализации</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#graph" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">График реализации</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#agreements" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Параметры соглашения</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#constructions" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Основные сооружения</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#peculiarities" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Применяемые технологии</span>
+    </a>
+</li><li class=" navigation__nav-item">
+    <a href="#ecologic" class="js-anchor navigation__nav-link ">
+        <span class="navigation__nav-circle"></span>
+        <span class="navigation__nav-text">Экологическая и социальная ответственность</span>
+    </a>
+</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+    <section class="in-number" id="in-number">
+    <div class="container">
+        <h2 class="in-number__title title">Проект в цифрах</h2>
+        <div class="in-number__cards">
+            <div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">11</div>
+        <h6 class="in-number__cards-subtitle text">километров</h6>
+    </div>
+    <p class="in-number__cards-text text">общая протяженность, с учетом съездов</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">6</div>
+        <h6 class="in-number__cards-subtitle text">полос движения</h6>
+    </div>
+    <p class="in-number__cards-text text">общее количество, по 3 в каждую сторону</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">40 000</div>
+        <h6 class="in-number__cards-subtitle text">автомобилей</h6>
+    </div>
+    <p class="in-number__cards-text text">расчетный трафик в сутки </p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">12</div>
+        <h6 class="in-number__cards-subtitle text">едениц съездов</h6>
+    </div>
+    <p class="in-number__cards-text text">12 съездов, из них 4 по направлению в центр</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">3,5</div>
+        <h6 class="in-number__cards-subtitle text">метра</h6>
+    </div>
+    <p class="in-number__cards-text text">минимальная ширина дорожной полосы</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">90</div>
+        <h6 class="in-number__cards-subtitle text">километров в час</h6>
+    </div>
+    <p class="in-number__cards-text text">максимально разрешённая скорость движения</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">3,5</div>
+        <h6 class="in-number__cards-subtitle text">километра</h6>
+    </div>
+    <p class="in-number__cards-text text">протяженоость исскуственных сооружений</p>
+</div><div class="in-number__cards-item">
+    <div class="in-number__cards-top">
+        <div class="in-number__cards-numb title">«Свободный поток»</div>
+        <h6 class="in-number__cards-subtitle text">Free Flow</h6>
+    </div>
+    <p class="in-number__cards-text text">технология взимания платы</p>
+</div>
+        </div>
+    </div>
+</section>
+
+    <section class="history" id="history">
+    <div class="history__img-mob">
+        <img src="./img/mh1.jpg" alt="History" loading="lazy">
+    </div>
+   
+    <div class="container">
+        <div class="history__top">
+            <div class="history__btn-nav slider-nav">
+                <button class="slider-nav__prev js-mhistory-prev">
+                    <span class="slider-nav_mob">
+                        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                    </span>
+                </button>
+                <button class="slider-nav__next js-mhistory-next">
+                    <span class="slider-nav_mob">
+                        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                    </span>
+                </button>
+            </div>
+            <h2 class="history__title title">История<br> проекта</h2>
+            <div class="history__bottom history__bottom_mobile">
+                <div class="history__bottom-tape">
+                    <img src="./img/svg/tape.svg" alt="Tape">
+                </div>    
+                <div class="history__year js-history-year-mob">
+    <div class="history__year-item">
+        <p>&gt; 5.05.2010</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 17.05.2013</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 12.03.2014</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 27.11.2014</p>
+    </div>
+</div>
+            </div>
+            <div class="history__content js-history-top">
+                <div class="history__content-item">
+    <div class="history__content-inner">
+        <div class="history__content-img">
+            <img src="./img/svg/files.svg" alt="History">
+        </div>
+        <div class="history__content-text">
+            <p>Первые официальные упоминания Северного дублера Кутузовского проспекта появились в Генеральном плане города Москвы, утвержденном Законом города Москвы от 5 мая 2010 г. N 17 «О Генеральном плане города Москвы», и распоряжении Правительства Москвы от 17 мая 2011 г. N 399-РП «О проектировании объектов дорожно-мостового строительства в 2011-2012 гг.»</p>
+        </div>
+    </div>
+</div><div class="history__content-item">
+    <div class="history__content-inner">
+        <div class="history__content-img">
+            <img src="./img/svg/files.svg" alt="History">
+        </div>
+        <div class="history__content-text">
+            <p>Проект планировки Северного дублера Кутузовского проспекта был утвержден Постановлением Правительства Москвы от 17 мая 2013 г. N 292-ПП «Об утверждении проекта планировки участка линейного объекта улично-дорожной сети - Северный дублер Кутузовского проспекта от Молодогвардейской транспортной развязки до ММДЦ «Москва-СИТИ» вдоль Смоленского направления МЖД»</p>
+        </div>
+    </div>
+</div><div class="history__content-item">
+    <div class="history__content-inner">
+        <div class="history__content-img">
+            <img src="./img/svg/files.svg" alt="History">
+        </div>
+        <div class="history__content-text">
+            <p>12 марта 2014 года Правительство Москвы объявило открытый конкурс на право заключения Концессионного Соглашения о финансировании, проектировании, строительстве и эксплуатации на платной основе участка линейного объекта улично-дорожной сети - Северный дублер Кутузовского проспекта от Молодогвардейской транспортной развязки до ММДЦ «Москва-СИТИ»</p>
+        </div>
+    </div>
+</div><div class="history__content-item">
+    <div class="history__content-inner">
+        <div class="history__content-img">
+            <img src="./img/svg/files.svg" alt="History">
+        </div>
+        <div class="history__content-text">
+            <p>На основании Распоряжения Департамента городского имущества города Москвы от 27 ноября 2014 № 19052 «О заключении концессионного соглашения о финансировании, проектировании, строительстве и эксплуатации на платной основе участка линейного объекта улично-дорожной сети – Северный дублер Кутузовского проспекта от Молодогвардейской транспортной развязки до ММДЦ «Москва-Сити» было принято решение о заключении Концессионного Соглашения с ОАО «Новая концессионная компания» в соответствии с условиями, содержащимися в Конкурсном предложении ОАО «Новая концессионная компания».</p>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="history__bottom">
+            <div class="history__bottom-tape">
+                <img src="./img/svg/tape.svg" alt="Tape">
+            </div>
+            <div class="slider-button">
+    <button class="slider-button__prev js-history-prev">
+        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+    </button>
+    <button class="slider-button__next js-history-next">
+        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+    </button>
+</div>
+
+            <div class="history__year js-history-year">
+    <div class="history__year-item">
+        <p>&gt; 5.05.2010</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 17.05.2013</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 12.03.2014</p>
+    </div>
+    <div class="history__year-item">
+        <p>&gt; 27.11.2014</p>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+
+    <section class="premise" id="premise">
+    <div class="container">
+       
+        <h2 class="title premise__title">Предпосылки реализации</h2>
+
+        <div class="premise__wrap">
+            <div class="premise__nav slider-nav">
+    <button class="slider-nav__prev js-slick-prev">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-prev"></use>
+</svg>
+        </span>
+    </button>
+    <button class="slider-nav__next js-slick-next">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-next"></use>
+</svg>
+        </span>
+    </button>
+</div>
+            <div class="premise__slider">
+                <div class="premise__inner js-slick">
+                    <div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/1.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">8 000 000 автомобилей</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                совокупный автопарк московского региона
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/2.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">&gt; 200 000 автомобилей в сутки</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                составляет регулярный трафик Кутузовского проспекта. В 2021 году Кутузовский проспект бы признан одной из самых загруженных улиц Москвы.
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/3.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">&gt; 130 000 человек</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                ежедневно посещают деловой центр «Москва-Сити», из них 25% приезжают на личных автомобилях. Необходимо увеличить транспортную связь между Москвой и Московской областью.
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/4.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">35 минут</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                в среднем занимает путь от делового центра «Москва-Сити» до МКАД, что является недопустимым значением для жителя современного динамично развивающего мегаполиса.
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/5.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">300 000 человек в сутки</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                достигнет посещаемость делового центра «Москва-Сити» к 2035 году. Растущая численность населения вынуждает строить новые вылетные магистрали.
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/6.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">&gt; 624 000 человек</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                составляет совокупное население районов, через которые проходит Северный дублер Кутузовского проспекта. Существует выраженная потребность в повышении транспортной доступности районов Москвы.
+            </p>
+        </div>
+    </div>
+</div><div class="premise__item">
+    <div class="premise__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset=""> -->
+            <img src="./img/premise/7.jpg" alt="Premise">
+        </picture>
+    </div>
+    <div class="premise__card">
+        <div class="premise__card-head">
+            <div class="premise__card-numb">64 человека погибло</div>
+        </div>
+        <div class="premise__card-body">
+            <p class="text">
+                на Кутузовском проспекте с 2015 по 2021 гг. Согласно данным школы дата-журналистики Strelka Mag Кутузовский проспект уверенно занимает лидирующие позиции по количеству ДТП на протяжении последних трех лет.
+            </p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            
+        </div>        
+    </div>
+</section>
+
+    <section class="effects" id="effects">
+    <div class="container">
+        <h2 class="title effects__title">Эффекты от реализации</h2>
+        <div class="effects__wrap">
+            <div class="effects__item effects__item_first">
+    <div class="effects__left">
+        <p class="effects__numb">452,6</p>
+        
+            <h4 class="effects__subtitle">миллионов<br> автомобилей</h4>
+        
+    </div>
+
+    
+        <div class="effects__text">
+            <p class="text">составит прогнозный трафик Северного дублера Кутузовского пр.за весь период эксплуатации, что существенно разгрузит Кутузовский проспект, Проспект Маршала Жукова, МКАД</p>
+        </div>
+    
+    
+</div><div class="effects__item effects__item_second">
+    <div class="effects__left">
+        <p class="effects__numb">7,5</p>
+        
+            <h4 class="effects__subtitle">минут</h4>
+        
+    </div>
+
+    
+        <div class="effects__text">
+            <p class="text">составит время в пути от делового центра «Москва-Сити» до МКАД, то есть время в пути сократится почти в 5 раз</p>
+        </div>
+    
+    
+</div><div class="effects__item effects__item_third">
+    <div class="effects__left">
+        <p class="effects__numb">7</p>
+        
+            <h4 class="effects__subtitle">миллионов <br>автомобилей</h4>
+        
+    </div>
+
+    
+        <div class="effects__text">
+            <p class="text">составит суммарная экономия времени для пользователей Северного дублера Кутузовский проспект при условии ежедневного пользования дорогой в течение года</p>
+        </div>
+    
+    
+</div><div class="effects__item effects__item_fourth">
+    <div class="effects__left">
+        <p class="effects__numb">1100</p>
+        
+            <h4 class="effects__subtitle">новых<br> рабочих мест</h4>
+        
+    </div>
+
+    
+    
+</div><div class="effects__item effects__item_fifth">
+    <div class="effects__left">
+        <p class="effects__numb">5</p>
+        
+            <h4 class="effects__subtitle">районов</h4>
+        
+    </div>
+
+    
+        <div class="effects__text">
+            <p class="text">Западного административного округа Москвы получат новую дорогу и улучшат транспортную доступность</p>
+        </div>
+    
+    
+</div><div class="effects__item effects__item_last">
+    <div class="effects__left">
+        <p class="effects__numb">50</p>
+        
+            <h4 class="effects__subtitle">миллиардов рублей</h4>
+        
+    </div>
+
+    
+        <div class="effects__text">
+            <p class="text">налоговых поступлений в городской бюджет за весь срок реализации проекта</p>
+        </div>
+    
+    
+</div>
+        </div>
+    </div>
+</section>
+
+    <section class="graph" id="graph">
+    <div class="graph__top">
+        <div class="container ">
+            <h2 class="title graph__title">График реализации</h2>
+            <div class="graph__nav js-graph-nav">
+                <div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">декабрь <br> 2014 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">май<br> 2015 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">август <br>2019 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">декабрь<br> 2019 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">март<br> 2020 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">август<br> 2020 года</div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">декабрь <br>2020 года </div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">июнь<br> 2022 года </div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">сентябрь<br> 2023 года </div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">ноябрь<br> 2022 года </div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">ноябрь<br> 2023 года </div>
+    <button class="graph__nav-btn"></button>
+</div><div class="graph__nav-item js-graph-nav-item">
+    <div class="graph__nav-year">декабрь<br> 2054 года </div>
+    <button class="graph__nav-btn"></button>
+</div>
+            </div>
+        </div>
+    </div>
+    <div class="graph__bottom">
+        <div class="graph__slick">
+            <div class="graph__slider-nav graph__slider-nav_mobile">
+                <div class="slider-button">
+                    <button class="slider-button__prev js-graph-prev">
+                        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                    </button>
+                    <button class="slider-button__next js-graph-next">
+                        <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                    </button>
+                </div>
+            </div>
+            <div class="graph__slider js-graph-slider">
+                <div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/1.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup ">
+            <div class="graph__slider-popup-inner figure-1">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">23 декабря</span>
+                        <span class="graph__slider-year">2014 года </span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">было подписано онцессионное соглашение между<br> АО «Новая концессионная компания» и Правительством Москвы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/2.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup ">
+            <div class="graph__slider-popup-inner figure-2">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">29 мая</span>
+                        <span class="graph__slider-year">2015 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">заключен договор подряда на выполнение проектных и изыскательных<br>  работ в отношении Северного дублера Кутузовского проспекта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/3.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup ">
+            <div class="graph__slider-popup-inner figure-3">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">август</span>
+                        <span class="graph__slider-year">2019 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">получено первое разрешение Минстроя России в рамках<br> строительства Северного дублера Кутузовского проспекта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/4.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup ">
+            <div class="graph__slider-popup-inner figure-4">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">декабрь</span>
+                        <span class="graph__slider-year">2019 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">начало работ по строительству<br> Северного дублера Кутузовского проспекта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/5.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup ">
+            <div class="graph__slider-popup-inner figure-5">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">30 марта</span>
+                        <span class="graph__slider-year">2020 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">Получено разрешение Минстроя России на строительство основного хода и съездов<br> Северного дублера Кутузовского проспекта, обустройство инженерных сетей и сооружений,<br> пункта взимания платы и здания центра управления платной дорогой, административно-<br>производственного комплекса службы содержания автомобильной дороги</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/6.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_six">
+            <div class="graph__slider-popup-inner figure-6">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">18 августа</span>
+                        <span class="graph__slider-year">2020 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">полностью размещен облигационный заем класса Б1 на сумму<br> 3 млрд.руб. для финансирования строительства</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/7.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-7">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">30 декабря</span>
+                        <span class="graph__slider-year">2020 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">подписано дополнительное соглашение к концессионному соглашению,<br> которым стороны согласовали использование безбарьерного способа<br> организации системы взимания платы (Free Flow)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/8.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_eight graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-8">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">июнь</span>
+                        <span class="graph__slider-year">2020 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">завершение строительства моста<br> через Москва-реку</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/9.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-9">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">cентябрь</span>
+                        <span class="graph__slider-year">2023 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">завершение строительства эстакады МКАД-Рабочий<br> поселок и других искусственных сооружений</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/10.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-10">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">ноябрь</span>
+                        <span class="graph__slider-year">2022 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">завершение устройства первого<br> километра дорожного полотна</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/11.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-11">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">ноябрь</span>
+                        <span class="graph__slider-year">2023 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">запуск движения по Северному дублеру<br> Кутузовского проспекта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><div class="graph__slider-item">
+    <div class="graph__img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/graph/m1.jpg"> -->
+            <img src="./img/graph/12.jpg" alt="Graph">
+        </picture>
+    </div>
+    <div class="graph__slider-inner container">
+        <div class="graph__slider-popup graph__slider-popup_right">
+            <div class="graph__slider-popup-inner figure-12">
+                <div class="graph__slider-top">
+                    <div class="graph__slider-date">
+                        <span class="graph__slider-month">декабрь</span>
+                        <span class="graph__slider-year">2054 года</span>
+                    </div>
+                    <div class="graph__slider-nav">
+                        <div class="slider-button">
+                            <button class="slider-button__prev js-graph-prev">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#prev"></use>
+</svg>
+                            </button>
+                            <button class="slider-button__next js-graph-next">
+                                <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph__slider-text">
+                    <p class="text">окончание периода эксплуатации<br> Северного дублера Кутузовского<br> проспекта концессионером</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="agreements" id="agreements">
+    <div class="container agreements__container">
+        <div class="agreements__top">
+            <div class="agreements__top-title">
+                <h2 class="title">Параметры<br> соглашения</h2>
+            </div>
+            <div class="agreement__params">
+                <div class="agreement__params-list">
+                    <div class="agreement__params-list-item">
+                        <div class="agreement__params-item">
+    <p class="agreement__params-key">Публичная сторона (концедент)</p>
+    <p class="agreement__params-val">город Москва</p>
+</div><div class="agreement__params-item">
+    <p class="agreement__params-key">Общий объем инвестиций</p>
+    <p class="agreement__params-val">более 50 млрд. рублей</p>
+</div><div class="agreement__params-item">
+    <p class="agreement__params-key">Срок соглашения</p>
+    <p class="agreement__params-val">40 лет</p>
+</div>
+                    </div>
+                    <div class="agreement__params-list-item">
+                        <div class="agreement__params-item">
+    <p class="agreement__params-key">Частная сторона (концессионер)</p>
+    <p class="agreement__params-val">АО «Новая концессионная компания»</p>
+</div><div class="agreement__params-item">
+    <p class="agreement__params-key">Организатор финансирования</p>
+    <p class="agreement__params-val">УК «Лидер»</p>
+</div><div class="agreement__params-item">
+    <p class="agreement__params-key">Юридическая модель</p>
+    <p class="agreement__params-val">Концессионное соглашение (115-ФЗ)</p>
+</div>
+                    </div>
+                </div>
+                <div class="agreement__params-bottom">
+                    <div class="agreement__params-bottom-item">
+                        <p>
+                            <span>Геподрядчик:</span>
+                            <strong>АО «Профессиональный Строитель»</strong>
+                        </p>
+                    </div>
+                    <div class="agreement__params-bottom-item">
+                        <p>
+                            <span>Организатор<br> финансирования:</span>
+                            <strong>НПФ группы «ГАЗФОНД», консорциум<br> иностранных инвесторовво главе с РФПИ</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agreements__bottom">
+            <div class="agreements__bottom-item">
+                <h3 class="agreements__bottom-title">Основные обязательства концессионера:</h3>
+                <ul class="agreements__obligation">
+                    <li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">осуществление в полном объеме инвестиций <br>в проектирование, строительство<br> и эксплуатацию объекта соглашения</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">разработка проектной документации, рабочей <br>документации и исполнительной документации <br>в целях создания автодороги</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">подготовка территории строительства<br> и выполнение технических условий РЖД</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">проектирование и строительство объекта соглашения</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">эксплуатация, включая сбор платы за проезд, <br>и содержание автодороги</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">передача (возврат) объекта соглашения <br>концеденту после прекращения действия<br> концессионного соглашения</p>
+</li>
+                </ul>
+            </div>
+            <section class="agreements__bottom-item">
+                <h3 class="agreements__bottom-title">Основные обязательства концедента:</h3>
+                <ul class="agreements__obligation">
+                    <li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">предоставление концессионеру земельных участков</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">предоставление концессионеру прав владения <br>и пользования в отношении объекта соглашения</p>
+</li><li class="agreements__obligation-list">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p class="text">приемка автодороги у концессионера в период передачи</p>
+</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</section>
+
+    <div class="constructions" id="constructions">
+    <div class="container constructions__inner">
+        <h2 class="constructions__title title">Основные сооружения</h2>
+        <div class="constructions__nav slider-nav">
+    <button class="slider-nav__prev js-slick-prev">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-prev"></use>
+</svg>
+        </span>
+    </button>
+    <button class="slider-nav__next js-slick-next">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-next"></use>
+</svg>
+        </span>
+    </button>
+</div>
+
+        <div class="constructions__carousel">
+            <div class="constructions__slider js-slick">
+                <div class="constructions__slider-item">
+    <div class="constructions__slider-img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/constructions/m1.jpg"> -->
+            <img src="./img/constructions/1.jpg" alt="Constructions" loading="lazy">
+        </picture>
+    </div>
+    <div class="constructions__out">
+        <div class="constructions__slider-bottom">
+            <div class="constructions__slider-object">
+                <h3 class="constructions__slider-title">Автодорожный мост через реку Москва</h3>
+                <p class="constructions__slider-text text">
+                    Прямые строгие линии, которые визуально создают ванты, позволят новому мосту 
+                    органично вписаться в современную городскую застройку и составить единый архитектурный 
+                    ансамбль с футуристическими башнями и зеркальными небоскребами делового центра «Москва-Сити».
+                </p>
+                <h4 class="constructions__figures-title constructions__figures-title_mob">Ключевые цифры</h4>
+            </div>
+            <div class="constructions__figures">
+                <h4 class="constructions__figures-title">Ключевые<br> цифры</h4>
+                <ul class="constructions__figures-list">
+                    <li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">2 500</span>
+        
+            <span class="constructions__figures-unit">тонн</span>
+        
+    </p>
+    <p class="constructions__figures-text">масса пролетной конструкции</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">331</span>
+        
+            <span class="constructions__figures-unit">метр</span>
+        
+    </p>
+    <p class="constructions__figures-text">общая длина моста</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">4</span>
+        
+            <span class="constructions__figures-unit">полосы</span>
+        
+    </p>
+    <p class="constructions__figures-text">По 2 в каждую сторону> и 1 съезд в сторону центра</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">18</span>
+        
+            <span class="constructions__figures-unit">метров</span>
+        
+    </p>
+    <p class="constructions__figures-text">подмостовой габарит</p>
+</li>
+                </ul>
+            </div>
+            <div class="constructions__solutions">
+                <h4 class="constructions__solutions-title">Технические решения:</h4>
+                <ul class="constructions__solutions-list">
+                    <li class="constructions__solutions-item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Арочно-вантовая<br> конструкция</p>
+</li><li class="constructions__solutions-item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Отсутствие опор <br>в русле реки</p>
+</li><li class="constructions__solutions-item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Наличие очистных сооружений<br> в подмостовом пространстве</p>
+</li><li class="constructions__solutions-item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Динамическая подсветка<br> в темное время</p>
+</li><li class="constructions__solutions-item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Судоходная<br> сигнализация</p>
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+                <div class="constructions__slider-item">
+    <div class="constructions__slider-img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/constructions/m1.jpg"> -->
+            <img src="./img/constructions/2.jpg" alt="Constructions" loading="lazy">
+        </picture>
+    </div>
+    <div class="constructions__out">
+        <div class="constructions__slider-bottom">
+            <div class="constructions__slider-object">
+                <h3 class="constructions__slider-title">Перекладка магистральной теплотрассы</h3>
+                <p class="constructions__slider-text text">
+                    <span>
+                        В рамках создания Северного дублера Кутузовского проспекта была осуществлена замена теплотрассы. Старые сети эксплуатировались длительное время, и в ходе строительства СДКП заменяются новыми.
+                    </span>
+    
+                    <span>
+                        Теперь трубы убраны под землю, что сократит потери тепла. Снизит издержки и новая запорная арматура. Теплоснабжение станет надежнее, а в десятках тысяч квартир москвичей будет теплее. 
+                    </span>
+                </p>
+                <h4 class="constructions__figures-title constructions__figures-title_mob">Ключевые цифры</h4>
+            </div>
+            <div class="constructions__figures">
+                <h4 class="constructions__figures-title">Ключевые<br> цифры</h4>
+                <ul class="constructions__figures-list">
+                    <li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">2</span>
+        
+            <span class="constructions__figures-unit">еденицы</span>
+        
+    </p>
+    <p class="constructions__figures-text">магистральных трубопровода</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">1200</span>
+        
+            <span class="constructions__figures-unit">мм</span>
+        
+    </p>
+    <p class="constructions__figures-text">диаметр трубопроводов</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">1,5</span>
+        
+            <span class="constructions__figures-unit">мм</span>
+        
+    </p>
+    <p class="constructions__figures-text">общая длина двух трубопроводов</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">25</span>
+        
+            <span class="constructions__figures-unit">атмосфер</span>
+        
+    </p>
+    <p class="constructions__figures-text">выдержали давление новые трубы на гидравлических испытаниях при рабочем в 14-16 атмосфер</p>
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                <div class="constructions__slider-item">
+    <div class="constructions__slider-img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/constructions/m1.jpg"> -->
+            <img src="./img/constructions/3.jpg" alt="Constructions" loading="lazy">
+        </picture>
+    </div>
+
+    <div class="constructions__out">
+        <div class="constructions__slider-bottom">
+            <div class="constructions__slider-object">
+                <h3 class="constructions__slider-title">Молодогвардейская развязка</h3>
+                <p class="constructions__slider-text text">
+                    <span>
+                        Молодогвардейская транспортная развязка построена в Западном административном округе Москвы на 56-57 км МКАД в районе Кунцево.
+                    </span>
+    
+                    <span>
+                        Эстакада основного хода развязки длиной 1,2 км состоит из двух параллельных эстакад шириной до 31 м. Уже построенная эстакада связывает Северный дублер Кутузовского проспекта и новую трассу «Обход Одинцово». 
+                    </span>
+                </p>
+                <h4 class="constructions__figures-title constructions__figures-title_mob">Ключевые цифры</h4>
+            </div>
+            <div class="constructions__figures">
+                <h4 class="constructions__figures-title">Ключевые<br> цифры</h4>
+                <ul class="constructions__figures-list">
+                    <li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">2</span>
+        
+    </p>
+    <p class="constructions__figures-text">разноуровневых<br> эстакад</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">1884</span>
+        
+            <span class="constructions__figures-unit">м</span>
+        
+    </p>
+    <p class="constructions__figures-text">общая длина</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">24 519</span>
+        
+            <span class="constructions__figures-unit">м²</span>
+        
+    </p>
+    <p class="constructions__figures-text">общая площадь</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">276,38</span>
+        
+            <span class="constructions__figures-unit">м</span>
+        
+    </p>
+    <p class="constructions__figures-text">длина путепровод<br> тоннельного типа</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">5</span>
+        
+    </p>
+    <p class="constructions__figures-text">съездов</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">73,5</span>
+        
+            <span class="constructions__figures-unit">м</span>
+        
+    </p>
+    <p class="constructions__figures-text">максимальная длина<br> пролета</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">6</span>
+        
+    </p>
+    <p class="constructions__figures-text">полос движения<br> по 3 в каждую сторону</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb"></span>
+        
+    </p>
+    <p class="constructions__figures-text"></p>
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+                <div class="constructions__slider-item">
+    <div class="constructions__slider-img">
+        <picture>
+            <!-- <source media="(max-width: 769px)" srcset="./img/constructions/m1.jpg"> -->
+            <img src="./img/constructions/4.jpg" alt="Constructions" loading="lazy">
+        </picture>
+    </div>
+    <div class="constructions__out">
+        <div class="constructions__slider-bottom">
+            <div class="constructions__slider-object">
+                <h3 class="constructions__slider-title">Эстакада МКАД –<br> Рабочий поселок</h3>
+                <p class="constructions__slider-text text">
+                    Эстакада МКАД-Рабочий поселок расположена на участке основного хода от Молодогвардейской транспортной развязки МКАД до о.п. «Рабочий поселок» и обеспечивает движение по дороге в обоих направлениях. На участке между улицей Боженко и о.п. «Рабочий поселок» к ней примыкает эстакада съезда, обеспечивающего съезд с улицы Боженко (Кубинка) на Северный дублер Кутузовского проспекта при движении в сторону центра города.
+                </p>
+                <h4 class="constructions__figures-title constructions__figures-title_mob">Ключевые цифры</h4>
+            </div>
+            <div class="constructions__figures">
+                <h4 class="constructions__figures-title">Ключевые<br> цифры</h4>
+                <ul class="constructions__figures-list">
+                    <li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">1958,12</span>
+        
+    </p>
+    <p class="constructions__figures-text">магистральных трубопровода</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">50</span>
+        
+    </p>
+    <p class="constructions__figures-text">диаметр трубопроводов</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">101</span>
+        
+    </p>
+    <p class="constructions__figures-text">общая длина двух трубопроводов</p>
+</li><li class="constructions__figures-item">
+    <p class="constructions__figures-top">
+        <span class="constructions__figures-numb">56038</span>
+        
+            <span class="constructions__figures-unit">м²</span>
+        
+    </p>
+    <p class="constructions__figures-text">выдержали давление новые трубы на гидравлических испытаниях при рабочем в 14-16 атмосфер</p>
+</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+    <section class="peculiarities" id="peculiarities">
+    <h2 class="peculiarities__title peculiarities__title_mob title">Технологические особенности</h2>
+    <div class="peculiarities__img peculiarities__img_mob">
+        <picture>
+            <img src="./img/peculiarities/m1.jpg" alt="Технологические особенности" loading="lazy">
+        </picture>
+    </div>
+    <div class="container peculiarities__container">
+        <div class="peculiarities__nav slider-nav">
+    <button class="slider-nav__prev js-peculiarities-prev">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-prev"></use>
+</svg>
+        </span>
+    </button>
+    <button class="slider-nav__next js-peculiarities-next">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-next"></use>
+</svg>
+        </span>
+    </button>
+</div>
+        <div class="peculiarities__top">
+            <div class="peculiarities__img">
+                <picture>
+                    <img src="./img/peculiarities/1.jpg" alt="Технологические особенности" loading="lazy">
+                </picture>
+            </div>
+            <div class="peculiarities__context">
+                <h2 class="peculiarities__title title">Технологические особенности</h2>
+                <p class="peculiarities__text text">
+                    Перед нами стоит задача не просто спроектировать 
+                    и построить дорогу, но и повысить эксплуатационную эффективность создаваемых объектов транспортной инфраструктуры с расчетом на продолжительный 
+                    период времени. Частный инвестор прямо экономически мотивирован рачительно эксплуатировать и поддерживать 
+                    в нормативном состоянии построенный объект. Довольные клиенты становятся регулярными пользователями, 
+                    а качественную дорогу не надо часто ремонтировать. 
+                </p>
+                <p class="peculiarities__text text">
+                    Поэтому мы при создании Северного дублера 
+                    Кутузовского проспекта применяем наилучшие российские 
+                    и международные практики, а также выстраиваем системную работу с отраслевыми экспертами и всегда ищем передовые технологические решения.
+                </p>
+            </div>
+        </div>
+        <div class="peculiarities__bottom">
+            <ul class="peculiarities__list js-peculiarities-list">
+                <li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Внедрение немецкого стандарта для автобанов, суммарная толщина асфальтовых слоев - 30 см против обычных 20 см.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Сборно-монолитное балочное пролетное строение с монолитной плитой проезжей части исключает холодные стыки и увеличивает  срок службы дороги.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Деформационные швы на искусственных сооружениях, имеющие пониженную шумовую эмиссию и повышенное сцепление с колесами, снижают шумовое воздействие на окружающую среду, увеличивают безопасность движения.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Литой асфальтобетон взамен щебеночно-мастичного асфальтобетона в нижнем слое мостового полотна увеличивает срок службы без капитального ремонта до 40 лет.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Напыляемая гидроизоляция системы Conibridge для железобетонных и стальных плит пролетных строений искусственных сооружений увеличивает срок службы гидроизоляции и сокращает трудоемкость работ при строительстве.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Конструкция дорожной одежды и ездового полотна искусственных сооружений по принятым в Германии стандартам и адаптированная к российским условиям снижает образование колеи и продлевает срок службы без капитального ремонта до 40 лет.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Использование полимерного битума и высокопрочного щебня из габродиабаза в верхнем слое покрытия дорожной одежды увеличивает межремонтный интервал до 7-10 лет.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Применение геотекстильных материалов в конструкции дорожных одежд и земляного полотна для дренажа и повышения несущей способности замедляет образование колейности и продлевает срок службы без капитального ремонта до 40 лет.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Использование полимерных труб дождевой канализации SN16 с увеличенной кольцевой жесткостью повышает надежность и срок эксплуатации.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Эвакуационные выходы с проезжей части автодороги, включая ступени в железобетонном дорожном ограждении и двери в шумозащитных экранах, повышают безопасность пользователей трассы.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Информационное моделирование (BIM) на стадии проектирования повышает качество проектных решений и, как следствие, делает движение по дороге более безопасным.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Продольный водоотводной лоток эффективно удаляет воду с проезжей части, делая движение автомобилей более безопасным.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Моноблочные водоотводные лотки из полимерного бетона увеличивают срок службы системы водоотвода.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Новый, принятый в Германии принцип отгона виражей поперечного профиля дороги на S-образных участках трассы увеличивает безопасность движения, снижает риск возникновения аквапланирования.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Увеличенный по сравнению с практикой строительства дорог в России до 2,5% поперечный уклон проезжей части лучше отводит с нее воду, улучшает дорожные условия и безопасность движения. </p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Структурная горизонтальная дорожная разметка с эффектом возникновения вибрации и шумовым эффектом лучше отводит воду с проезжей части и повышает безопасность движения.</p>
+</li><li class="peculiarities__item">
+    <svg>
+    <use xlink:href="./img/sprites/sprite.svg#lg"></use>
+</svg>
+    <p>Полимербитумная лента для примыкания верхнего слоя асфальтобетонного покрытия к бетонным и металлическим поверхностям увеличивает срок службы дороги.</p>
+</li>
+            </ul>
+        </div>
+    </div>
+    <div class="peculiarities__context peculiarities__context_mob">
+        <p class="peculiarities__text text">
+            Перед нами стоит задача не просто спроектировать 
+            и построить дорогу, но и повысить эксплуатационную эффективность создаваемых объектов транспортной инфраструктуры с расчетом на продолжительный 
+            период времени. Частный инвестор прямо экономически мотивирован рачительно эксплуатировать и поддерживать 
+            в нормативном состоянии построенный объект. Довольные клиенты становятся регулярными пользователями, 
+            а качественную дорогу не надо часто ремонтировать. 
+        </p>
+        <p class="peculiarities__text text">
+            Поэтому мы при создании Северного дублера 
+            Кутузовского проспекта применяем наилучшие российские 
+            и международные практики, а также выстраиваем системную работу с отраслевыми экспертами и всегда ищем передовые технологические решения.
+        </p>
+    </div>
+</section>
+
+    <div class="ecologic" id="ecologic">
+    <div class="container ecologic__container">
+        <div class="ecologic__inner">
+            <div class="ecologic__item">
+                <h2 class="ecologic__title title">
+                    <span>Экологическая<br> </span>
+                    и социальная ответственность
+                </h2>
+                <p class="ecologic__text text">
+                    Северный дублер Кутузовского проспекта – 
+                    не просто уникальный технологичный объект транспортной инфраструктуры столицы, 
+                    но и социально ответственный и общественно полезный инвестиционный проект.
+                </p>
+                <p class="ecologic__text text">
+                    Строительство Северного дублера Кутузовского проспекта предусматривает комплекс взвешенных компенсационных мероприятий, которые нивелируют ущерб, причиняемый окружающей среде и гражданам 
+                    в ходе строительства и эксплуатации – в частности, установку шумозащитных экранов, замену оконных конструкций в расположенных поблизости жилых домах, посадки зеленых насаждений.
+                </p>
+            </div>
+            <div class="ecologic__item">
+                <div class="ecologic__cards">
+                    <div class="ecologic__cards-img">
+                        <picture>
+                            <img src="./img/ecologic/1.jpg" alt="Экологическая и социальная ответственность" loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="ecologic__cards-wrap">
+                        <div class="ecologic__cards-item">
+    <p class="ecologic__cards-numb">894</p>
+    <p class="ecologic__cards-text">дерева и кустарника сохранено</p>
+    <p class="ecologic__cards-subtext">благодаря Free Flow</p>
+</div><div class="ecologic__cards-item">
+    <p class="ecologic__cards-numb">8 661</p>
+    <p class="ecologic__cards-text">метр</p>
+    <p class="ecologic__cards-subtext">общая протяженность шумозащитных экранов</p>
+</div><div class="ecologic__cards-item">
+    <p class="ecologic__cards-numb">25 983</p>
+    <p class="ecologic__cards-text">кв. м</p>
+    <p class="ecologic__cards-subtext">общая площадь шумозащитных экранов</p>
+</div><div class="ecologic__cards-item">
+    <p class="ecologic__cards-numb">9 200</p>
+    <p class="ecologic__cards-text">квадратных метров</p>
+    <p class="ecologic__cards-subtext">Благоустроенной<br> придорожной территории</p>
+</div>
+                    </div>
+                </div>
+            </div>
+            <p class="ecologic__text ecologic__text_mob text">
+                Северный дублер Кутузовского проспекта – 
+                не просто уникальный технологичный объект транспортной инфраструктуры столицы, 
+                но и социально ответственный и общественно полезный инвестиционный проект.
+            </p>
+            <p class="ecologic__text ecologic__text_mob text">
+                Строительство Северного дублера Кутузовского проспекта предусматривает комплекс взвешенных компенсационных мероприятий, которые нивелируют ущерб, причиняемый окружающей среде и гражданам 
+                в ходе строительства и эксплуатации – в частности, установку шумозащитных экранов, замену оконных конструкций в расположенных поблизости жилых домах, посадки зеленых насаждений.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <section class="replacement" id="replacement">
+    <div class="container replacement__inner">
+        
+        <div class="replacement__nav slider-nav">
+    <button class="slider-nav__prev js-slick-prev">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-prev"></use>
+</svg>
+        </span>
+    </button>
+    <button class="slider-nav__next js-slick-next">
+        <span class="slider-nav_mob">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#next"></use>
+</svg>
+        </span>
+        <span class="slider-nav_des">
+            <svg>
+    <use xlink:href="./img/sprites/sprite.svg#sl-next"></use>
+</svg>
+        </span>
+    </button>
+</div>
+        <div class="replacement__slider js-slick">
+            <div class="replacement__slider-item">
+    <div class="replacement__slider-inner">
+        <div class="replacement__img">
+            <picture>
+                <img src="./img/replacement/1.jpg" alt="Замена оконных конструкций" loading="lazy">
+            </picture>
+        </div>
+        <div class="replacement__text">
+            <h4 class="replacement__title">Замена оконных конструкций</h4>
+            <p>
+                Новые двойные стеклопакеты – с вентиляцией с клапанами. Они прекрасно защитят жителей домов от шума и пыли не только, когда по дороге поедут автомобили, но и в момент строительства дороги. Новые окна защищают жителей также и от постоянного шума проходящих почти под окнами поездов железной дороги Смоленского направления.
+            </p>
+            
+                <p>
+                    Замена окон должна была производиться ближе к окончанию строительства Северного дублера Кутузовского проспекта. Однако по просьбе жителей близлежащих домов заменить окна решено было до начала активной работы на стройплощадках. Перед вводом СДКП в эксплуатацию дорогу от жилой застройки отделят шумозащитными экранами.
+                </p>
+              
+        </div>
+    </div>
+</div><div class="replacement__slider-item">
+    <div class="replacement__slider-inner">
+        <div class="replacement__img">
+            <picture>
+                <img src="./img/replacement/2.jpg" alt="Шумозащитные экраны" loading="lazy">
+            </picture>
+        </div>
+        <div class="replacement__text">
+            <h4 class="replacement__title">Шумозащитные экраны</h4>
+            <p>
+                Шумозащитные экраны высотой три метра устанавливаются с наружной стороны пролетного строения на консоли плиты проезжей части на расстоянии один метр от лицевой грани парапетного ограждения.
+            </p>
+              
+        </div>
+    </div>
+</div><div class="replacement__slider-item">
+    <div class="replacement__slider-inner">
+        <div class="replacement__img">
+            <picture>
+                <img src="./img/replacement/3.jpg" alt="«Свободный поток»" loading="lazy">
+            </picture>
+        </div>
+        <div class="replacement__text">
+            <h4 class="replacement__title">«Свободный поток»</h4>
+            <p>
+                Для сохранения тысяч деревьев и кустарников принято важное решение об изменении проекта в ходе его реализации - отказ от барьерной системы оплаты проезда, стандартной практики для платных дорог, в пользу инновационной технологии Free flow, что в переводе означает «свободный поток». Автомобили по магистрали будут двигаться свободно, не упираясь в шлагбаумы и не задерживаясь на пунктах взимания платы. 
+            </p>
+            
+                <p>
+                    Главное достоинство системы Free flow в том, что она позволяет сократить место, которое занимает дорога. Это особенно важно в столице и оправданно как с экономической, так и с социальной точки зрения. Каждое дерево в современном мегаполисе имеет значение, кроме того, водителям не придется останавливаться для совершения оплаты проезда и терять особенно ценное в московском ритме жизни время.
+                </p>
+              
+        </div>
+    </div>
+</div><div class="replacement__slider-item">
+    <div class="replacement__slider-inner">
+        <div class="replacement__img">
+            <picture>
+                <img src="./img/replacement/3.jpg" alt="Аллея Отечественных войн" loading="lazy">
+            </picture>
+        </div>
+        <div class="replacement__text">
+            <h4 class="replacement__title">Аллея Отечественных войн</h4>
+            <p>
+                СДКП – проект, включенный в исторический контекст города, поддерживающий и разделяющий   исторические ценности жителей и гостей столицы. Фрагмент старого Можайского шоссе, по которому уходил из Москвы Наполеон Бонапарт в 1812 году и по которому шли ополченцы на защиту города в 1941 году, примыкает к СДКП. Увековечить память об этих значимых исторических событиях станет возможным благодаря акции «Аллея Отечественных войн» - с вовлечением жителей близлежащих районов будут разработаны планы по облагораживанию зоны рядом с СДКП и установки памятных объектов в центре старого шоссе. Мнение жителей будет также учитываться при создании галереи памяти – размещении портретов героев двух Отечественных войн на Можайском шоссе.
+            </p>
+              
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__item">
+                <a href="/" class="footer__logo">
+                    <img src="./img/logo.svg" alt="Logo">
+                </a>
+                <p class="footer__copy">&copy;&nbsp;АО&nbsp;&laquo;Новая концессионная компания&raquo;, 2021</p>
+            </div>
+            <div class="footer__item">
+                <div class="footer__socials">
+                    <div class="social">
+    <a href="/" target="_blank" class="social__link">
+        <svg class="social__icon">
+            <use xlink:href="./img/sprites/sprite.svg#tl"></use>
+        </svg>
+    </a>
+</div><div class="social">
+    <a href="/" target="_blank" class="social__link">
+        <svg class="social__icon">
+            <use xlink:href="./img/sprites/sprite.svg#ins"></use>
+        </svg>
+    </a>
+</div><div class="social">
+    <a href="/" target="_blank" class="social__link">
+        <svg class="social__icon">
+            <use xlink:href="./img/sprites/sprite.svg#vk"></use>
+        </svg>
+    </a>
+</div><div class="social">
+    <a href="/" target="_blank" class="social__link">
+        <svg class="social__icon">
+            <use xlink:href="./img/sprites/sprite.svg#fb"></use>
+        </svg>
+    </a>
+</div><div class="social">
+    <a href="/" target="_blank" class="social__link">
+        <svg class="social__icon">
+            <use xlink:href="./img/sprites/sprite.svg#ok"></use>
+        </svg>
+    </a>
+</div>
+                </div>
+                <div class="footer__logo footer__logo_second">
+                    <a href="/" class="footer__logo">
+                        <img src="./img/logo-2.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+        <link rel="stylesheet" href="./libs/magnific/magnific-popup.css">
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="./libs/slick/slick-theme.css"/>
+
+
+        <script src="./libs/jquery-3.5.1.min.js"></script>
+        <script src="./libs/flex-menu/modernizr.custom.js"></script>
+        <script src="./libs/flex-menu/flexmenu.min.js"></script>
+        <script src="./libs/magnific/jquery.magnific-popup.min.js"></script>
+        <script src="./libs/slick/slick.min.js"></script>
+        <script src="./libs/maskedinput.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
